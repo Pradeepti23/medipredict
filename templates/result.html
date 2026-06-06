@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MediPredict Result</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#4facfe,#00f2fe);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .result-box{
+            background:white;
+            padding:40px;
+            width:500px;
+            text-align:center;
+            border-radius:15px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color:#0077b6;
+            margin-bottom:20px;
+        }
+
+        .prediction{
+            font-size:24px;
+            font-weight:bold;
+            color:#2d6a4f;
+            margin-bottom:25px;
+        }
+
+        .btn{
+            text-decoration:none;
+            background:#0077b6;
+            color:white;
+            padding:12px 20px;
+            border-radius:8px;
+            display:inline-block;
+        }
+
+        .btn:hover{
+            background:#023e8a;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="result-box">
+
+    <h1>MediPredict Result</h1>
+
+    <div class="prediction">
+        {prediction_text}
+    </div>
+
+    <a href="/" class="btn">Check Another Prediction</a>
+
+</div>
+
+</body>
+</html>
